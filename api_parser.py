@@ -6,12 +6,18 @@ import datetime
 class Cat:
     name = None
     age = None
+    weight = None
+    happy = None
 
-    def __init__(self, name, age) -> None:
+    def __init__(self, name, age, weight, happy) -> None:
         self.name = name
         self.age = age
+        self.weight = weight
+        self.happy = happy
+
+    #Начальник не затримуй зарплату
     def get_data(self):
-        return self.name, self.age
+        return self.name, self.age, self.weight, self.happy
 
 
 X_API_KEY = 'CLOCKIFY_API_KEY'
