@@ -3,6 +3,17 @@ import copy
 from dateutil.parser import parse
 import datetime
 
+class Cat:
+    name = None
+    age = None
+
+    def __init__(self, name, age) -> None:
+        self.name = name
+        self.age = age
+    def get_data(self):
+        return self.name, self.age
+
+
 X_API_KEY = 'CLOCKIFY_API_KEY'
 headers = {'X-Api-Key': X_API_KEY}
 workspace_id = '62ac83c82518aa18da253802'
